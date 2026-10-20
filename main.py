@@ -13,18 +13,23 @@ t.add_row(["3", "", "", "", "3"])
 t.add_divider()
 t.add_row(["", "1", "2", "3", ""])
 
+##TODO Se riesci, migliora l'inserimento della coordinata
+### Inserimento della "X"
+def enter(player):
+    row = int(input("Write the number of the row:"))
+    column = int(input("Write the number of the column:"))
+    global t
+    t.rows[row - 1][column] = f"{player}"
+
 print(art.logo)
 print("Welcome to Alice's Tic Tac Toe game!")
 
 #TODO "Vuoi iniziare la partita?" Se sì, mantieni gioco attivo in loop fino alla fine
 print(t)
 
-#TODO Inizia il giocatore "X"; crea funzione per l'inserimento ("X" o "O")
-##TODO Se riesci, migliora l'inserimento della coordinata
-### Inserimento della "X"
-row = int(input("Write the number of the row:"))
-column = int(input("Write the number of the column:"))
-t.rows[row - 1][column] = "X"
+enter("X")
+print(t)
+enter("O")
 print(t)
 
 #TODO Funzione per il calcolo se uno dei due giocatori ha vinto (se sì, fine partita e mostra vincitore)

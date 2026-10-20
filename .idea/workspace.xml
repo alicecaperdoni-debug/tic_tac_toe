@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd68ba1e-392b-47e0-969f-471ee5d81beb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/tic_tac_toe.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="fd68ba1e-392b-47e0-969f-471ee5d81beb" name="Changes" comment="Tabella, logo e inserimento coordinate versione 1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="8" />
+    <option name="cachedIndexableFilesCount" value="9" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -32,73 +26,85 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;alicecaperdoni-debug&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/alicecaperdoni-debug/tic_tac_toe.git&quot;,
+    &quot;accountId&quot;: &quot;eed56c05-4084-477a-96ee-4b60e2d10266&quot;
+  }
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0196823844673744" />
-      <entry key="MS500" value="1.7805079676012188" />
-      <entry key="S2" value="3.210987348337934" />
-      <entry key="S5" value="5.045318857505997" />
-      <entry key="S10" value="7.558489731904586" />
-      <entry key="S30" value="15.325180664969484" />
-      <entry key="S60" value="25.881999014338504" />
-      <entry key="M2" value="41.40422825790395" />
-      <entry key="M5" value="67.18363435862437" />
-      <entry key="M10" value="93.23824271463762" />
-      <entry key="M15" value="110.70287278828232" />
-      <entry key="M30" value="139.60615829472167" />
-      <entry key="H1" value="161.88778542334848" />
-      <entry key="H2" value="176.09361190647317" />
-      <entry key="H4" value="184.17158134091088" />
-      <entry key="D1" value="191.47290032647228" />
-      <entry key="W1" value="192.78042932696852" />
+      <entry key="MS100" value="1.0268631055033774" />
+      <entry key="MS500" value="1.624013850813263" />
+      <entry key="S2" value="3.1566948592243347" />
+      <entry key="S5" value="5.44178623826208" />
+      <entry key="S10" value="7.598599287423362" />
+      <entry key="S30" value="11.412404636958554" />
+      <entry key="S60" value="18.45175559483452" />
+      <entry key="M2" value="33.68771253249392" />
+      <entry key="M5" value="64.14823049036623" />
+      <entry key="M10" value="94.20417564612337" />
+      <entry key="M15" value="113.80340653425928" />
+      <entry key="M30" value="145.88803393315143" />
+      <entry key="H1" value="170.54095174971206" />
+      <entry key="H2" value="186.2647096771664" />
+      <entry key="H4" value="195.21290935717346" />
+      <entry key="D1" value="203.30645810515006" />
+      <entry key="W1" value="204.75648136030404" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
       <entry key="S2" value="0.0" />
-      <entry key="S5" value="5.617989433348348E-156" />
-      <entry key="S10" value="2.3869106066126965E-78" />
-      <entry key="S30" value="1.6349002669923335E-26" />
-      <entry key="S60" value="1.8751411736742264E-13" />
-      <entry key="M2" value="7.112808255797396E-7" />
-      <entry key="M5" value="0.006623913241039374" />
-      <entry key="M10" value="0.1406377314592386" />
-      <entry key="M15" value="0.38983581674167256" />
-      <entry key="M30" value="1.0811553023794136" />
-      <entry key="H1" value="1.8008448535535513" />
-      <entry key="H2" value="2.324297328784299" />
-      <entry key="H4" value="2.6406126247960318" />
-      <entry key="D1" value="2.936871299460404" />
-      <entry key="W1" value="2.9908991657243775" />
+      <entry key="S5" value="1.7861119149511614E-162" />
+      <entry key="S10" value="1.3458604443184413E-81" />
+      <entry key="S30" value="1.3506595376299097E-27" />
+      <entry key="S60" value="5.389658924629311E-14" />
+      <entry key="M2" value="3.8133332263572234E-7" />
+      <entry key="M5" value="0.005162024934150103" />
+      <entry key="M10" value="0.124152246870869" />
+      <entry key="M15" value="0.35874310182741265" />
+      <entry key="M30" value="1.0371438418205943" />
+      <entry key="H1" value="1.7638098122044308" />
+      <entry key="H2" value="2.300273152929653" />
+      <entry key="H4" value="2.6269303560108352" />
+      <entry key="D1" value="2.9343295855298885" />
+      <entry key="W1" value="2.990529246735827" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9243995025044225" />
-      <entry key="MS500" value="1.7409826638580945" />
-      <entry key="S2" value="3.1924653252852466" />
-      <entry key="S5" value="5.033533880866514" />
-      <entry key="S10" value="7.549597911331393" />
-      <entry key="S30" value="15.318651062285955" />
-      <entry key="S60" value="25.875402603019282" />
-      <entry key="M2" value="41.395819248787845" />
-      <entry key="M5" value="67.17315281415281" />
-      <entry key="M10" value="93.35250523127293" />
-      <entry key="M15" value="111.06395120362782" />
-      <entry key="M30" value="140.66195452337695" />
-      <entry key="H1" value="163.67125201428632" />
-      <entry key="H2" value="178.40765186082567" />
-      <entry key="H4" value="186.80660987689657" />
-      <entry key="D1" value="194.40877149155196" />
-      <entry key="W1" value="195.7711838283249" />
+      <entry key="MS100" value="0.9671393303506999" />
+      <entry key="MS500" value="1.5884282911847214" />
+      <entry key="S2" value="3.1392737275047313" />
+      <entry key="S5" value="5.4303589950745925" />
+      <entry key="S10" value="7.590476705697398" />
+      <entry key="S30" value="11.408116051560135" />
+      <entry key="S60" value="18.447799502845548" />
+      <entry key="M2" value="33.682122338515356" />
+      <entry key="M5" value="64.13961620294548" />
+      <entry key="M10" value="94.3048190922294" />
+      <entry key="M15" value="114.13553518763425" />
+      <entry key="M30" value="146.90077541013747" />
+      <entry key="H1" value="172.28770282367003" />
+      <entry key="H2" value="188.55481252780208" />
+      <entry key="H4" value="197.83427507958925" />
+      <entry key="D1" value="206.23978684153738" />
+      <entry key="W1" value="207.74686573478934" />
     </decayedShown>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4,
-  "fromUser": false
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3KuuHZXwTNW4B8K6NNMfK3Of9Jm" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -110,6 +116,7 @@
     "Python.main.executor": "Run",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "master",
@@ -118,13 +125,14 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+    "nodejs_package_manager_path": "npm",
+    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true"
   }
 }]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-6fa658e1df1a-5bd6d13a2a75-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.8665.369" />
+        <option value="bundled-python-sdk-73a66231627c-5bd6d13a2a75-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.10968.92" />
       </set>
     </attachedChunks>
   </component>
@@ -136,9 +144,22 @@
       <option name="presentableId" value="Default" />
       <updated>1792419688850</updated>
     </task>
+    <task id="LOCAL-00001" summary="Tabella, logo e inserimento coordinate versione 1">
+      <option name="closed" value="true" />
+      <created>1792423462486</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1792423462486</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Tabella, logo e inserimento coordinate versione 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tabella, logo e inserimento coordinate versione 1" />
   </component>
 </project>
