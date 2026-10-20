@@ -27,20 +27,47 @@ def enter(player):
         else:
             print("\nSomeone already played in this cell, please try other coordinates.\n")
 
+#TODO AGGIUSTA CHECK WINNER!!!!!
+def check_winner():
+    global t
+    global end_game
+
+    if t.rows[1][1] == t.rows[1][2] == t.rows[1][3] or t.rows[2][1] == t.rows[2][2] == t.rows[2][3] or t.rows[3][1] == t.rows[3][2] == t.rows[3][3] or t.rows[1][1] == t.rows[2][1] == t.rows[3][1] or t.rows[1][2] == t.rows[2][2] == t.rows[3][2] or t.rows[1][3] == t.rows[2][3] == t.rows[3][3] or t.rows[1][1] == t.rows [2][2] == t.rows[3][3] or t.rows[1][3] == t.rows[2][2] == t.rows[3][1]:
+            return True
+    else:
+        return False
+
 print(art.logo)
 print("Welcome to Alice's Tic Tac Toe game!")
 
-game_on = True
-#TODO "Vuoi iniziare la partita?" Se sì, mantieni gioco attivo in loop fino alla fine
-while game_on:
+end_game = False
+turn = 0
+
+while end_game == False:
+    turn += 1
+    print(turn)
     print(f"\n{t}\n")
     enter("X")
     print(f"\n{t}\n")
+
+    if turn >= 3:
+        if check_winner():
+            end_game = True
+    if turn == 5:
+        end_game = True
+
     enter("O")
     print(f"\n{t}\n")
 
-#TODO Funzione per il calcolo se uno dei due giocatori ha vinto (se sì, fine partita e mostra vincitore)
-#TODO Nuova partita? Se sì resetta la tabella
+    if turn >= 3:
+        end_game = check_winner()
+print(t.get_string())
+# if check_winner():
+#     if "X" in t.rows >= "O" in t.rows:
+#         print("\"X\" wins!")
+#TODO Scrivi la fine della partita, se c'è un vincitore o se è un pareggio
 
+
+#TODO Nuova partita? Se sì resetta la tabella
 
 ###TODO Extra: possibilità di scegliere un giocatore (user vs. computer)
