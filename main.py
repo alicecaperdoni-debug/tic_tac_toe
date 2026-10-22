@@ -14,7 +14,7 @@ t.add_divider()
 t.add_row(["", "1", "2", "3", ""])
 
 ##TODO Se riesci, migliora l'inserimento della coordinata
-### Inserimento della "X"
+### Inserimento della "X" o "O"
 def enter(player):
     enter_again = True
     while enter_again:
@@ -27,12 +27,11 @@ def enter(player):
         else:
             print("\nSomeone already played in this cell, please try other coordinates.\n")
 
-#TODO AGGIUSTA CHECK WINNER!!!!!
 def check_winner():
     global t
     global end_game
 
-    if t.rows[1][1] == t.rows[1][2] == t.rows[1][3] or t.rows[2][1] == t.rows[2][2] == t.rows[2][3] or t.rows[3][1] == t.rows[3][2] == t.rows[3][3] or t.rows[1][1] == t.rows[2][1] == t.rows[3][1] or t.rows[1][2] == t.rows[2][2] == t.rows[3][2] or t.rows[1][3] == t.rows[2][3] == t.rows[3][3] or t.rows[1][1] == t.rows [2][2] == t.rows[3][3] or t.rows[1][3] == t.rows[2][2] == t.rows[3][1]:
+    if t.rows[0][1] == t.rows[0][2] == t.rows[0][3] or t.rows[1][1] == t.rows[1][2] == t.rows[1][3] or t.rows[2][1] == t.rows[2][2] == t.rows[2][3] or t.rows[0][1] == t.rows[1][1] == t.rows[2][1] or t.rows[0][2] == t.rows[1][2] == t.rows[2][2] or t.rows[0][3] == t.rows[1][3] == t.rows[2][3] or t.rows[0][1] == t.rows [1][2] == t.rows[2][3] or t.rows[0][3] == t.rows[1][2] == t.rows[2][1]:
             return True
     else:
         return False
@@ -45,7 +44,7 @@ turn = 0
 
 while end_game == False:
     turn += 1
-    print(turn)
+
     print(f"\n{t}\n")
     enter("X")
     print(f"\n{t}\n")
@@ -53,15 +52,18 @@ while end_game == False:
     if turn >= 3:
         if check_winner():
             end_game = True
+            break
     if turn == 5:
         end_game = True
+        break
 
     enter("O")
     print(f"\n{t}\n")
 
     if turn >= 3:
         end_game = check_winner()
-print(t.get_string())
+
+# print(t.get_string())
 # if check_winner():
 #     if "X" in t.rows >= "O" in t.rows:
 #         print("\"X\" wins!")
