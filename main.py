@@ -81,8 +81,3 @@ if check_winner():
     print(f"Player {last_player} is the winner!")
 else:
     print("It's a draw!")
-
-
-#TODO Nuova partita? Se sì resetta la tabella
-
-###TODO Extra: possibilità di scegliere un giocatore (user vs. computer)
